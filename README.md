@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+# Songwriter Companion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application designed to assist songwriters by providing chord suggestions based on the selected key and scale type. The app displays diatonic chords, modal interchange chords, and secondary dominants, helping you compose music more efficiently.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Key and Scale Selection**: Choose any key and select between Major and Minor scales.
+- **Diatonic Chords Display**: View all diatonic chords within the selected key and scale.
+- **Modal Interchange Chords**: Explore chords borrowed from parallel modes.
+- **Secondary Dominants**: Discover secondary dominant chords to add tension and interest to your compositions.
+- **Responsive Design**: Optimized for both desktop and mobile devices using Material-UI's responsive utilities.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `npm test`
+![Songwriter Companion Screenshot](./public/demo.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+View the webapp [HERE](https://songwritercompanion.netlify.app)
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node.js** (v14 or higher recommended)
+- **npm** (v6 or higher)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Steps
 
-### `npm run eject`
+1. **Clone the Repository**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   git clone https://github.com/yourusername/songwriter-companion.git
+   cd songwriter-companion
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Install Dependencies**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Start the Development Server**
 
-## Learn More
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The app should now be running on [http://localhost:3000](http://localhost:3000).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
 
-### Code Splitting
+### Select the Key
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Use the dropdown menu to select the key you want to compose in. Both sharp and flat keys are available, and enharmonic equivalents are indicated (e.g., C# / Db).
 
-### Analyzing the Bundle Size
+### Select the Scale Type
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Choose between Major and Minor scales to see the corresponding chords.
 
-### Making a Progressive Web App
+### Explore the Chords
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Diatonic Chords**: These are the chords naturally found within the selected key and scale.
+- **Modal Interchange**: Chords borrowed from the parallel mode, allowing you to add variety.
+- **Secondary Dominants**: Dominant chords that resolve to diatonic chords other than the tonic.
 
-### Advanced Configuration
+### Responsive Interface
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The app adjusts its layout based on your device, ensuring a seamless experience on both mobile and desktop platforms.
 
-### Deployment
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **React**: A JavaScript library for building user interfaces.
+- **Material-UI (MUI)**: React components for faster and easier web development.
+- **@mui/material**: Core UI components.
+- **@mui/icons-material**: Material Design icons.
+- **JavaScript (ES6+)**: Modern JavaScript features.
+- **HTML5 & CSS3**: Markup and styling.
+- **npm Scripts**: For running and building the app.
 
-### `npm run build` fails to minify
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! Please follow these steps:
+
+1. **Fork the Repository**
+
+   Click on the 'Fork' button on the top right to create a copy of the repository on your GitHub account.
+
+2. **Clone Your Fork**
+
+   ```bash
+   git clone https://github.com/yourusername/songwriter-companion.git
+   cd songwriter-companion
+   ```
+
+3. **Create a New Branch**
+
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+
+4. **Make Your Changes**
+
+    - Ensure code follows the existing style.
+    - Write clear commit messages.
+
+5. **Commit and Push**
+
+   ```bash
+   git commit -m "Add feature: YourFeatureName"
+   git push origin feature/YourFeatureName
+   ```
+
+6. **Submit a Pull Request**
+
+    - Go to the original repository and click on 'Pull Requests'.
+    - Submit your pull request for review.
+
+## License
+
+This project is licensed under the MIT License.
+
+*Note: Include a LICENSE file in your repository if you choose to specify a license.*
+
+## Contact
+
+For any questions or suggestions, feel free to reach out:
+
+- **GitHub**: [stefanoesposito](https://github.com/stefanoesposito)

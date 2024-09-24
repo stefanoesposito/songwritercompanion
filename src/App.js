@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Footer from './Footer';
+import KeySelector from './KeySelector';
+import ChordDisplay from './ChordDisplay';
+import {Container, Typography, Box, useMediaQuery} from '@mui/material'
+import Logo from './assets/img/logo.png';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    const isMobile = useMediaQuery('(max-width:600px)');
+    const [selectedKey, setSelectedKey] = useState('C');
+    const [scaleType, setScaleType] = useState('Major');
+
+    const resetKey = () => {
+        setSelectedKey('C')
+        setScaleType('Major')
+    }
+
+    return (
+        <Box
+            sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                minHeight: '100vh',
+            }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+            <Container
+                maxWidth="md"
+                sx={{
+                    marginTop: '2rem',
+                    flexGrow: 1,
+                }}
+            >
+                <div
+                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }}
+                    onClick={resetKey}
+                >
+                    <img src={Logo} width={isMobile ? 70 : 80} alt="Songwriter Companion Logo" />
+                    <Typography variant={isMobile ? 'h4' : 'h3'} component="h1" align={'center'} color={'#4c7289'}>
+                        Songwriter Companion
+                    </Typography>
+                </div>
+                <KeySelector
+                    selectedKey={selectedKey}
+                    setSelectedKey={setSelectedKey}
+                    scaleType={scaleType}
+                    setScaleType={setScaleType}
+                />
+                <ChordDisplay selectedKey={selectedKey} scaleType={scaleType} />
+            </Container>
+            <Footer />
+        </Box>
+    );
 }
 
 export default App;
