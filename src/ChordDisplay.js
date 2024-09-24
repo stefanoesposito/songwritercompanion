@@ -119,6 +119,7 @@ function ChordDisplay({ selectedKey, scaleType }) {
                         <Typography variant="h6">Modal Interchange</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
+                        <small>Modal interchange is the practice of borrowing chords from the parallel scale (major or minor) of the current key. This allows for enriching the harmony by introducing non-diatonic but closely related chords. It is used to add variety and color to musical progressions.</small>
                         <List>
                             {modalInterchanges.map((chord, index) => (
                                 <ListItem key={index}>
@@ -136,6 +137,7 @@ function ChordDisplay({ selectedKey, scaleType }) {
                         <Typography variant="h6">Secondary Dominants</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
+                        <small>Secondary dominants are dominant chords (V7) that prepare and resolve to diatonic chords other than the tonic in the current key. They are used to temporarily tonicize other scale degrees, creating tension and harmonic interest. Notated as V7/x, where "x" indicates the target chord.</small>
                         <List>
                             {secondaryDominants.map((chord, index) => (
                                 <ListItem key={index}>
