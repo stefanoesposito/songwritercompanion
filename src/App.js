@@ -4,6 +4,7 @@ import KeySelector from './KeySelector';
 import ChordDisplay from './ChordDisplay';
 import {Container, Typography, Box, useMediaQuery} from '@mui/material'
 import Logo from './assets/img/logo.png';
+import './App.css';
 
 function App() {
     const isMobile = useMediaQuery('(max-width:600px)');
@@ -35,7 +36,7 @@ function App() {
                     onClick={resetKey}
                 >
                     <img src={Logo} width={isMobile ? 70 : 80} alt="Songwriter Companion Logo" />
-                    <Typography variant={isMobile ? 'h4' : 'h3'} component="h1" align={'center'} color={'#4c7289'}>
+                    <Typography variant={isMobile ? 'h4' : 'h3'} component="h1" align={'center'} color={'#fafaf3'}>
                         Songwriter Companion
                     </Typography>
                 </div>
