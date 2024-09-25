@@ -1,0 +1,9 @@
+{
+  "diatonicChords": "Diatonic Chords in {{key}} {{scaleType}}",
+  "modalInterchange": "Modal Interchange",
+  "secondaryDominants": "Secondary Dominants",
+  "modalInterchangeExplanation": "Modal interchange is the practice of borrowing chords from the parallel scale (major or minor) of the current key. This allows for enriching the harmony by introducing non-diatonic but closely related chords. It is used to add variety and color to musical progressions.",
+  "secondaryDominantsExplanation": "Secondary dominants are dominant chords (V7) that prepare and resolve to diatonic chords other than the tonic in the current key. They are used to temporarily tonicize other scale degrees, creating tension and harmonic interest. Notated as V7/x, where \"x\" indicates the target chord.",
+  "selectKey": "Select the key",
+  "scaleType": "Scale type"
+}

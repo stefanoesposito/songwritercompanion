@@ -1,0 +1,9 @@
+{
+  "diatonicChords": "Diatonische Akkorde in {{key}} {{scaleType}}",
+  "modalInterchange": "Modaler Austausch",
+  "secondaryDominants": "Sekundärdominanten",
+  "modalInterchangeExplanation": "Der modale Austausch ist die Praxis, Akkorde aus der parallelen Tonleiter (Dur oder Moll) des aktuellen Schlüssels zu entleihen. Dies ermöglicht es, die Harmonie zu bereichern, indem nicht-diatonische, aber eng verwandte Akkorde eingeführt werden. Es wird verwendet, um musikalischen Progressionen Vielfalt und Farbe zu verleihen.",
+  "secondaryDominantsExplanation": "Sekundärdominanten sind Dominant-Akkorde (V7), die zu diatonischen Akkorden in der aktuellen Tonart (außer der Tonika) führen und auflösen. Sie werden verwendet, um vorübergehend andere Stufen der Skala zu tonicisieren und Spannung sowie harmonisches Interesse zu schaffen. Notiert als V7/x, wobei „x“ den Zielakkord angibt.",
+  "selectKey": "Tonart auswählen",
+  "scaleType": "Tonleiter-Typ"
+}

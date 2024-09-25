@@ -1,12 +1,17 @@
 // Footer.js
 import React from 'react';
 import {Typography, Box, Link} from '@mui/material'
+import LanguageSelector from './LanguageSelector'
 
 function Footer() {
     return (
         <Box
             component="footer"
             sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                gap: 2,
                 backgroundColor: 'rgba(0, 0, 0, 0.7)',
                 color: '#ffffff',
                 padding: '1rem',
@@ -15,8 +20,9 @@ function Footer() {
             }}
         >
             <Typography variant="body1">
-                Made with <span style={{ color: '#e25555' }}>❤️</span> by <Link href={'https://www.mygigz.live'} style={{color: 'yellow'}} target={'_blank'}>Stefano Esposito</Link>
+                By <Link href={'https://www.mygigz.live'} style={{color: '#e3c822', textDecoration: 'none'}} target={'_blank'}>Stefano Esposito</Link>
             </Typography>
+            <LanguageSelector />
         </Box>
     );
 }

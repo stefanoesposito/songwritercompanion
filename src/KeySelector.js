@@ -1,5 +1,6 @@
 import {FormControl, Grid, InputLabel, MenuItem, Select} from '@mui/material'
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const keys = [
     'C', 'G', 'D', 'A', 'E', 'B', 'F#',
@@ -14,6 +15,8 @@ const displayKeys = [
 const scaleTypes = ['Major', 'Minor']
 
 function KeySelector({selectedKey, setSelectedKey, scaleType, setScaleType}) {
+    const { t } = useTranslation();
+
     return (
         <Grid container spacing={2} style={{marginTop: '1rem'}}>
             <Grid item xs={6}>
@@ -30,12 +33,12 @@ function KeySelector({selectedKey, setSelectedKey, scaleType, setScaleType}) {
                             },
                         }}
                     >
-                        Select the key
+                        {t('selectKey')}
                     </InputLabel>
                     <Select
                         labelId="key-label"
                         value={selectedKey}
-                        label="Select the key"
+                        label={t('selectKey')}
                         onChange={(e) => setSelectedKey(e.target.value)}
                         sx={{
                             color: 'white',
@@ -76,12 +79,12 @@ function KeySelector({selectedKey, setSelectedKey, scaleType, setScaleType}) {
                             },
                         }}
                     >
-                        Scale type
+                        {t('scaleType')}
                     </InputLabel>
                     <Select
                         labelId="scale-type-label"
                         value={scaleType}
-                        label="Scale type"
+                        label={t('scaleType')}
                         onChange={(e) => setScaleType(e.target.value)}
                         sx={{
                             color: 'white',

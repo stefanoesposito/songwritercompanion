@@ -1,0 +1,9 @@
+{
+  "diatonicChords": "Accords diatoniques en {{key}} {{scaleType}}",
+  "modalInterchange": "Échange modal",
+  "secondaryDominants": "Dominantes secondaires",
+  "modalInterchangeExplanation": "L'échange modal est la pratique consistant à emprunter des accords de la gamme parallèle (majeure ou mineure) de la tonalité actuelle. Cela permet d'enrichir l'harmonie en introduisant des accords non diatoniques mais étroitement liés. Il est utilisé pour ajouter de la variété et de la couleur aux progressions musicales.",
+  "secondaryDominantsExplanation": "Les dominantes secondaires sont des accords de dominante (V7) qui préparent et résolvent des accords diatoniques autres que la tonique dans la tonalité actuelle. Elles sont utilisées pour toniciser temporairement d'autres degrés de la gamme, créant ainsi de la tension et de l'intérêt harmonique. Notées comme V7/x, où « x » indique l'accord cible.",
+  "selectKey": "Sélectionnez la tonalité",
+  "scaleType": "Type de gamme"
+}

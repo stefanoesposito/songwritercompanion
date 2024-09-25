@@ -1,0 +1,9 @@
+{
+  "diatonicChords": "Acordes diatônicos em {{key}} {{scaleType}}",
+  "modalInterchange": "Intercâmbio modal",
+  "secondaryDominants": "Dominantes secundárias",
+  "modalInterchangeExplanation": "O intercâmbio modal é a prática de emprestar acordes da escala paralela (maior ou menor) da tonalidade atual. Isso permite enriquecer a harmonia introduzindo acordes não diatônicos, mas intimamente relacionados. É usado para adicionar variedade e cor às progressões musicais.",
+  "secondaryDominantsExplanation": "As dominantes secundárias são acordes de dominante (V7) que preparam e resolvem em acordes diatônicos que não são a tônica na tonalidade atual. Eles são usados para tonicizar temporariamente outros graus da escala, criando tensão e interesse harmônico. Notado como V7/x, onde \"x\" indica o acorde alvo.",
+  "selectKey": "Selecione a tonalidade",
+  "scaleType": "Tipo de escala"
+}

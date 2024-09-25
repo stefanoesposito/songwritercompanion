@@ -4,6 +4,8 @@ import {
     Accordion, AccordionSummary, AccordionDetails
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { useTranslation } from 'react-i18next';
+
 
 const sharpNotes = [
     'C', 'C#', 'D', 'D#', 'E', 'F',
@@ -79,6 +81,7 @@ function getNoteName(noteIndex, accidentalPreference) {
 }
 
 function ChordDisplay({ selectedKey, scaleType }) {
+    const { t } = useTranslation();
     const accidentalType = getAccidentalType(selectedKey);
     let notes;
 
@@ -101,7 +104,7 @@ function ChordDisplay({ selectedKey, scaleType }) {
             <Grid item xs={12}>
                 <Paper elevation={3} style={{ padding: '1rem' }}>
                     <Typography variant="h6" gutterBottom>
-                        Diatonic Chords in {selectedKey} {scaleType}
+                        {t('diatonicChords', { key: selectedKey, scaleType: scaleType })}
                     </Typography>
                     <List>
                         {diatonicChords.map((chord, index) => (
@@ -116,10 +119,10 @@ function ChordDisplay({ selectedKey, scaleType }) {
             <Grid item xs={12}>
                 <Accordion>
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        <Typography variant="h6">Modal Interchange</Typography>
+                        <Typography variant="h6">{t('modalInterchange')}</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <small>Modal interchange is the practice of borrowing chords from the parallel scale (major or minor) of the current key. This allows for enriching the harmony by introducing non-diatonic but closely related chords. It is used to add variety and color to musical progressions.</small>
+                        <small>{t('modalInterchangeExplanation')}</small>
                         <List>
                             {modalInterchanges.map((chord, index) => (
                                 <ListItem key={index}>
@@ -134,10 +137,10 @@ function ChordDisplay({ selectedKey, scaleType }) {
             <Grid item xs={12}>
                 <Accordion>
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        <Typography variant="h6">Secondary Dominants</Typography>
+                        <Typography variant="h6">{t('secondaryDominants')}</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <small>Secondary dominants are dominant chords (V7) that prepare and resolve to diatonic chords other than the tonic in the current key. They are used to temporarily tonicize other scale degrees, creating tension and harmonic interest. Notated as V7/x, where "x" indicates the target chord.</small>
+                        <small>{t('secondaryDominantsExplanation')}</small>
                         <List>
                             {secondaryDominants.map((chord, index) => (
                                 <ListItem key={index}>
