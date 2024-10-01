@@ -25,7 +25,8 @@ function App() {
                 display: 'flex',
                 flexDirection: 'column',
                 minHeight: '100vh',
-                background: 'radial-gradient(circle, rgba(30,69,141,1) 50%, rgba(76,127,215,1) 100%)',
+                background: 'radial-gradient(circle, rgba(54, 88, 106, 1) 50%, rgba(113, 155, 175, 1) 100%)',
+                // background: 'radial-gradient(circle, rgba(113, 155, 175, 1) 50%, rgba(54, 88, 106, 1) 100%)',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
             }}
@@ -43,7 +44,13 @@ function App() {
                         justifyContent: 'center',
                         alignItems: 'center',
                         cursor: 'pointer',
-                        gap: 2
+                        gap: 2,
+                        backgroundColor: 'white',
+                        borderRadius: 16,
+                        padding: 12,
+                        WebkitBoxShadow: "1px 8px 7px -4px rgba(0,0,0,0.79)",
+                        boxShadow: "1px 8px 7px -4px rgba(0,0,0,0.79)"
+
                     }}
                     onClick={resetKey}
                 >
@@ -56,7 +63,7 @@ function App() {
                         variant={isMobile ? 'h4' : 'h3'}
                         component="h3"
                         align={'center'}
-                        color={'#fafaf3'}
+                        color={'#36586A'}
                         fontSize={isMobile ? 24 : 60}
                     >
                         Songwriter Companion
