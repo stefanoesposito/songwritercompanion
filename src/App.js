@@ -25,6 +25,9 @@ function App() {
                 display: 'flex',
                 flexDirection: 'column',
                 minHeight: '100vh',
+                background: 'radial-gradient(circle, rgba(30,69,141,1) 50%, rgba(76,127,215,1) 100%)',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
             }}
         >
             <Container

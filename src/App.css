@@ -5,9 +5,8 @@ html, body, #root {
 }
 
 body {
-  background: linear-gradient(135deg, #1e458d 0%, #4c7fd7 100%);
-  /*color: #ffffff;*/
-  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
