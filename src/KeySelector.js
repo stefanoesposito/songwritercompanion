@@ -42,6 +42,7 @@ function KeySelector({selectedKey, setSelectedKey, scaleType, setScaleType}) {
                         onChange={(e) => setSelectedKey(e.target.value)}
                         sx={{
                             color: 'white',
+                            fontSize: 20,
                             '.MuiOutlinedInput-notchedOutline': {
                                 borderColor: 'white',
                             },
@@ -57,7 +58,10 @@ function KeySelector({selectedKey, setSelectedKey, scaleType, setScaleType}) {
                         }}
                     >
                         {keys.map((key, index) => (
-                            <MenuItem key={key} value={key}>
+                            <MenuItem
+                                key={key}
+                                value={key}
+                            >
                                 {displayKeys[index]}
                             </MenuItem>
                         ))}
@@ -88,6 +92,7 @@ function KeySelector({selectedKey, setSelectedKey, scaleType, setScaleType}) {
                         onChange={(e) => setScaleType(e.target.value)}
                         sx={{
                             color: 'white',
+                            fontSize: 20,
                             '.MuiOutlinedInput-notchedOutline': {
                                 borderColor: 'white',
                             },
