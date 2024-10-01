@@ -49,14 +49,15 @@ function App() {
                 >
                     <img
                         src={Logo}
-                        width={isMobile ? 70 : 80}
+                        width={isMobile ? 50 : 80}
                         alt={t('songwriterCompanion')}
                     />
                     <Typography
                         variant={isMobile ? 'h4' : 'h3'}
-                        component="h1"
+                        component="h3"
                         align={'center'}
                         color={'#fafaf3'}
+                        fontSize={isMobile ? 24 : 60}
                     >
                         Songwriter Companion
                     </Typography>
