@@ -1,6 +1,6 @@
 {
   "diatonicChords": "Accordi Diatonici in {{key}} {{scaleType}}",
-  "modalInterchange": "Scambio Modale",
+  "modalInterchange": "Interscambio Modale",
   "secondaryDominants": "Dominanti Secondarie",
   "modalInterchangeExplanation": "Lo scambio modale è la pratica di prendere in prestito accordi dalla scala parallela (maggiore o minore) della tonalità corrente. Ciò consente di arricchire l'armonia introducendo accordi non diatonici ma strettamente correlati. Viene utilizzato per aggiungere varietà e colore alle progressioni musicali.",
   "secondaryDominantsExplanation": "Le dominanti secondarie sono accordi dominanti (V7) che preparano e risolvono in accordi diatonici diversi dalla tonica nella tonalità corrente. Sono usati per tonicizzare temporaneamente altri gradi della scala, creando tensione e interesse armonico. Notati come V7/x, dove \"x\" indica l'accordo di destinazione.",
