@@ -20,7 +20,7 @@ function Footer() {
             }}
         >
             <Typography variant="body1">
-                By <Link href={'https://www.mygigz.live'} style={{color: '#e3c822', textDecoration: 'none'}} target={'_blank'}>Stefano Esposito</Link>
+                By <Link href={'https://stefanoesposito.vercel.app'} style={{color: '#e3c822', textDecoration: 'none'}} target={'_blank'}>Stefano Esposito</Link>
             </Typography>
             <LanguageSelector />
         </Box>
